@@ -20,7 +20,7 @@ def main():
     parser.add_argument('inseqfile', nargs='?', type=argparse.FileType('r'), default=sys.stdin, help='Input sequence file [default: stdin].')
     parser.add_argument('outseqfile', nargs='?', type=argparse.FileType('w'), default=sys.stdout, help='Output sequence file [default: stdout].')
     parser.add_argument('-f', '--format', choices=['fasta','clustal', 'embl', 'genbank', 'imgt', 'phd', 'pir', 'tab'], default='fasta', help='Sequence format [default: %(default)s]. WARNING: This program check for sequence only, any other data is ignored during the comparison, although the output sequences have all their original data.')
-    parser.add_argument('-v', '--version', action='version', version='0.9.0', help="Show program's version number and exit.")
+    parser.add_argument('-v', '--version', action='version', version='1.0.1', help="Show program's version number and exit.")
 
     args=parser.parse_args()
 
